@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; // umumiy qilib berganimning sababi hamma joyda bir hil ekan
+  text-decoration: none; // umumiy qilib berganimning sababi hamma joyda bir hil ekan
+}
+header {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: $white;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation__logo-link {
+
+}
+.navigation__cal-link {
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: $darkblue;
+  margin-left: auto;
+}
+.navigation__cal-link::before {
+  content: "";
+  background: {
+    image: url("../../img/phone-call.svg");
+    repeat: no-repeat;
+  };
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.navigation__form-language {
+  margin-left: 30px;
+}
+.navigation__form-language::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 22px;
+  background-color: $darkblue;
+  margin-right: 20px;
+}
+.form__select {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.form__select option {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkblue;
+}
+.navigation__form-language  button {
+  @include site-btn;
+  border: 3px solid $darkblue;
+  outline: none;
+  transition: all .3s linear;
+  margin-left: 33px;
+}
+.navigation__form-language  button:hover {
+  background-color: $white;
+  color: $darkblue;
+}
+.navigation__form-language  button:active {
+  background-color: #0a1a90;
+  color: $white;
+  border: 3px solid #0a1a90;
+}
+.navigation__hamburger-btn {
+  width: 70px;
+  height: 15px;
+  border: none;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  margin-left: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: $darkblue;
+  img {
+    margin-left: 10px;
+  }
+}
+.navigation__navbar {
+  display: none;
+}
+
+
+@include breakpoint-down (760px) {
+  header {
+
+  }
+  .header-navigation {
+
+  }
+  .navigation__logo-link {
+    width: 100px;
+    height: 22px;
+  }
+  .navigation__cal-link {
+    display: none;
+  }
+  .navigation__form-language {
+    display: none;
+  }
+  .navigation__hamburger-btn {
+    margin-left: auto;
+  }
+}

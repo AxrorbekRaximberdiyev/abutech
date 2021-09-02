@@ -1,0 +1,256 @@
+#ten {
+  padding-top: 36px;
+  padding-bottom: 50px;
+  background: {
+    image: url("../../img/bcolor.svg"), url("../../img/bcolor.svg");
+    repeat: no-repeat;
+    size: cover;
+  };
+}
+.ten__block {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.ten__left-box {
+  width: 50%;
+}
+.ten__right-box {
+  width: 50%;
+}
+.ten__header {
+  width: 365px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+  color: #FFFFFF;
+  margin-bottom: 5px;
+}
+.ten__text {
+  width: 400px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 34px;
+}
+.ten__text2 {
+  width: 400px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  opacity: 0.8;
+  margin-bottom: 18px;
+}
+.form-control {
+  width: 330px;
+  display: flex;
+  justify-content: space-between;
+}
+.form__input {
+  width: 242px;
+  padding-left: 10px;
+  border: none;
+  outline: none;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.form__btn {
+  @include site-btn;
+  transition: all .3s linear;
+  border: 3px solid $darkblue;
+  outline: none;
+  margin-left: 5px;
+
+}
+.form__btn:hover {
+  background-color: $white;
+  color: $darkblue;
+}
+.form__btn:active {
+  background-color: #0a1a90;
+  color: $white;
+  border: 3px solid #0a1a90;
+}
+.form__btn-two {
+  padding: 12px 29px;
+  transition: all .3s linear;
+  border: 3px solid $white;
+  background-color: $white;
+  outline: none;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #00094A;
+  img {
+    margin-right: 5px;
+  }
+}
+.form__btn-two:hover {
+  background-color: #C0CAD5;
+  color: $darkblue;
+  border: 3px solid #C0CAD5;
+}
+.form__btn-two:active {
+
+}
+
+@include breakpoint-down (760px) {
+  #ten {
+    padding-top: 36px;
+    padding-bottom: 50px;
+    background: {
+      image: url("../../img/bcolor.svg"), url("../../img/bcolor.svg");
+      repeat: no-repeat;
+      size: cover;
+    };
+  }
+  .ten__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .ten__left-box {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .ten__right-box {
+    width: 100%;
+  }
+  .ten__header {
+    width: 100%;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    color: #FFFFFF;
+    margin-bottom: 5px;
+  }
+  .ten__text {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 34px;
+  }
+  .ten__text2 {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-bottom: 18px;
+  }
+  .form-control {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form__input {
+    width: 63%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    background: #FFFFFF;
+    border-radius: 2px;
+  }
+  .form__btn {
+    width: 35%;
+    @include site-btn;
+    transition: all .3s linear;
+    border: 3px solid $darkblue;
+    outline: none;
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .form__btn:hover {
+    background-color: $white;
+    color: $darkblue;
+  }
+  .form__btn:active {
+    background-color: #0a1a90;
+    color: $white;
+    border: 3px solid #0a1a90;
+  }
+  .form__btn-two {
+    padding: 12px 29px;
+    transition: all .3s linear;
+    border: 3px solid $white;
+    background-color: $white;
+    outline: none;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    color: #00094A;
+    img {
+      margin-right: 5px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
